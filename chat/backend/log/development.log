@@ -1,0 +1,1155 @@
+Started GET "/" for 127.0.0.1 at 2023-09-10 21:09:17 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.4ms | Allocations: 694)
+Completed 200 OK in 90ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 7980)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-10 21:09:18 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 271)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 871)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-10 21:09:30 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 14)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 207)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-10 21:29:05 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.8ms | Allocations: 522)
+Completed 200 OK in 34ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 4570)
+
+
+Started GET "/api/test" for 127.0.0.1 at 2023-09-10 21:29:17 +0900
+Processing by ApplicationController#test as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 256)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-09-10 21:29:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/test" for ::1 at 2023-09-10 21:34:53 +0900
+Processing by ApplicationController#test as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/api/test" for ::1 at 2023-09-10 21:34:54 +0900
+Processing by ApplicationController#test as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 93)
+
+
+Started GET "/api/test" for ::1 at 2023-09-10 21:34:54 +0900
+Processing by ApplicationController#test as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 93)
+
+
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRooms (20230910124041)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230910124041"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-09-10 12:45:52.826857"], ["updated_at", "2023-09-10 12:45:52.826857"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoom Create (1.8ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "General"], ["created_at", "2023-09-10 13:06:02.397750"], ["updated_at", "2023-09-10 13:06:02.397750"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRoom Create (1.8ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Random"], ["created_at", "2023-09-10 13:06:07.775176"], ["updated_at", "2023-09-10 13:06:07.775176"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoom Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "rooms"[0m
+Started GET "/rooms" for ::1 at 2023-09-10 22:07:10 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 10.2ms | ActiveRecord: 0.7ms | Allocations: 7973)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-09-10 22:07:10 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20230910130935)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (23.8ms)[0m  [1m[35mCREATE TABLE "messages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "sender_name" varchar, "room_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a8db0fb63a"
+FOREIGN KEY ("room_id")
+  REFERENCES "rooms" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_messages_on_room_id" ON "messages" ("room_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230910130935"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-09-17 20:27:04 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 71.4ms | Allocations: 527)
+Completed 200 OK in 329ms (Views: 129.5ms | ActiveRecord: 0.0ms | Allocations: 4573)
+
+
+Started GET "/api/test" for 127.0.0.1 at 2023-09-17 20:27:06 +0900
+Processing by ApplicationController#test as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 256)
+
+
+  [1m[36mRoom Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "rooms"[0m
+Started GET "/rooms" for ::1 at 2023-09-19 16:56:08 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 92ms (Views: 24.0ms | ActiveRecord: 1.3ms | Allocations: 8725)
+
+
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" ORDER BY "rooms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Hello!"], ["sender_name", "John"], ["room_id", 1], ["created_at", "2023-09-19 08:56:25.520859"], ["updated_at", "2023-09-19 08:56:25.520859"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" ORDER BY "rooms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (1.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Hi!"], ["sender_name", "Jane"], ["room_id", 1], ["created_at", "2023-09-19 08:56:36.269210"], ["updated_at", "2023-09-19 08:56:36.269210"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" ORDER BY "rooms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (1.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "How are you?"], ["sender_name", "John"], ["room_id", 1], ["created_at", "2023-09-19 08:56:48.096975"], ["updated_at", "2023-09-19 08:56:48.096975"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" ORDER BY "rooms"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (1.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Fine, thanks!"], ["sender_name", "Jane"], ["room_id", 1], ["created_at", "2023-09-19 08:56:54.455309"], ["updated_at", "2023-09-19 08:56:54.455309"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMessage Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "messages"[0m
+Started GET "/rooms/1/messages" for ::1 at 2023-09-19 17:58:23 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 169ms (Views: 11.7ms | ActiveRecord: 1.9ms | Allocations: 19092)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-09-19 17:58:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rooms" for ::1 at 2023-09-19 18:30:49 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 3176)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 18:30:56 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 922)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 18:32:03 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 921)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 19:15:37 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 1.2ms | Allocations: 1060)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 19:27:07 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 3152)
+
+
+Started POST "/rooms" for ::1 at 2023-09-19 19:27:16 +0900
+Processing by RoomsController#create as HTML
+  Parameters: {"name"=>"TestRoom1", "room"=>{"name"=>"TestRoom1"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/rooms_controller.rb:10:in `create'
+  [1m[36mRoom Create (1.1ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "TestRoom1"], ["created_at", "2023-09-19 10:27:16.846847"], ["updated_at", "2023-09-19 10:27:16.846847"]]
+  ↳ app/controllers/rooms_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/rooms_controller.rb:10:in `create'
+Completed 201 Created in 16ms (Views: 0.6ms | ActiveRecord: 4.7ms | Allocations: 2640)
+
+
+Started POST "/rooms" for ::1 at 2023-09-19 19:27:41 +0900
+Processing by RoomsController#create as HTML
+  Parameters: {"name"=>"TestRoom2", "room"=>{"name"=>"TestRoom2"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/rooms_controller.rb:10:in `create'
+  [1m[36mRoom Create (2.0ms)[0m  [1m[32mINSERT INTO "rooms" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "TestRoom2"], ["created_at", "2023-09-19 10:27:41.727437"], ["updated_at", "2023-09-19 10:27:41.727437"]]
+  ↳ app/controllers/rooms_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/rooms_controller.rb:10:in `create'
+Completed 201 Created in 11ms (Views: 1.0ms | ActiveRecord: 5.0ms | Allocations: 1984)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 19:48:05 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 3403)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 19:48:06 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1160)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 21:13:39 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 1.8ms | Allocations: 1298)
+
+
+Started GET "/rooms" for ::1 at 2023-09-19 21:13:39 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 1160)
+
+
+Started GET "/api/test" for 127.0.0.1 at 2023-09-20 12:03:01 +0900
+Processing by ApplicationController#test as HTML
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 133)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-09-20 12:03:01 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 13:27:58 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 464ms (Views: 69.0ms | ActiveRecord: 3.6ms | Allocations: 16681)
+
+
+Started POST "/rooms/1/messages" for ::1 at 2023-09-20 13:28:11 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"hello", "sender_name"=>"John", "room_id"=>"1", "message"=>{"content"=>"hello", "sender_name"=>"John"}}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (3.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "hello"], ["sender_name", "John"], ["room_id", 1], ["created_at", "2023-09-20 04:28:11.567225"], ["updated_at", "2023-09-20 04:28:11.567225"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+Completed 201 Created in 31ms (Views: 1.4ms | ActiveRecord: 8.5ms | Allocations: 3532)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 13:28:15 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 17ms (Views: 11.1ms | ActiveRecord: 0.9ms | Allocations: 2004)
+
+
+Started POST "/rooms/1/messages" for ::1 at 2023-09-20 13:28:47 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"I'm Japanese", "sender_name"=>"Shu", "room_id"=>"1", "message"=>{"content"=>"I'm Japanese", "sender_name"=>"Shu"}}
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (4.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "I'm Japanese"], ["sender_name", "Shu"], ["room_id", 1], ["created_at", "2023-09-20 04:28:47.930143"], ["updated_at", "2023-09-20 04:28:47.930143"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+Completed 201 Created in 31ms (Views: 1.4ms | ActiveRecord: 10.6ms | Allocations: 2771)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 13:28:51 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 0.7ms | Allocations: 2148)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 13:41:17 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 2313)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:23:17 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:23:18 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 28ms (Views: 6.4ms | ActiveRecord: 1.2ms | Allocations: 6794)
+
+
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 22ms (Views: 6.0ms | ActiveRecord: 2.1ms | Allocations: 7476)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:23:26 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 2137)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:23:41 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 1.0ms | Allocations: 2135)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:28:26 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 2135)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:28:32 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 2135)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:28:45 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 0.6ms | Allocations: 2135)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:28:51 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 2135)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 14:28:54 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 2135)
+
+
+Started GET "/cable" for ::1 at 2023-09-20 15:11:52 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 15:11:52 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.8ms | Allocations: 2318)
+
+
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 15:11:52 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 15:15:40 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 15:15:40 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 15:15:40 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 2208)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started POST "/rooms/1/messages" for ::1 at 2023-09-20 15:16:01 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"realtime message", "sender_name"=>"Ai", "room_id"=>"1", "message"=>{"content"=>"realtime message", "sender_name"=>"Ai"}}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (5.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "realtime message"], ["sender_name", "Ai"], ["room_id", 1], ["created_at", "2023-09-20 06:16:01.133393"], ["updated_at", "2023-09-20 06:16:01.133393"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+[ActionCable] Broadcasting to room_channel_1: #<Message id: 7, content: "realtime message", sender_name: "Ai", room_id: 1, created_at: "2023-09-20 06:16:01.133393000 +0000", updated_at: "2023-09-20 06:16:01.133393000 +0000">
+Completed 201 Created in 40ms (Views: 1.3ms | ActiveRecord: 14.2ms | Allocations: 3169)
+
+
+RoomChannel transmitting {"id"=>7, "content"=>"realtime message", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:16:01.133Z", "updated_at"=>"2023-09-20T06:16:01.133Z"} (via streamed from room_channel_1)
+RoomChannel transmitting {"id"=>7, "content"=>"realtime message", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:16:01.133Z", "updated_at"=>"2023-09-20T06:16:01.133Z"} (via streamed from room_channel_1)
+Started POST "/rooms/1/messages" for ::1 at 2023-09-20 15:16:05 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"ok thanks this is ", "sender_name"=>"Ai", "room_id"=>"1", "message"=>{"content"=>"ok thanks this is ", "sender_name"=>"Ai"}}
+  [1m[36mRoom Load (0.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (6.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "ok thanks this is "], ["sender_name", "Ai"], ["room_id", 1], ["created_at", "2023-09-20 06:16:05.464790"], ["updated_at", "2023-09-20 06:16:05.464790"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+[ActionCable] Broadcasting to room_channel_1: #<Message id: 8, content: "ok thanks this is ", sender_name: "Ai", room_id: 1, created_at: "2023-09-20 06:16:05.464790000 +0000", updated_at: "2023-09-20 06:16:05.464790000 +0000">
+Completed 201 Created in 40ms (Views: 1.7ms | ActiveRecord: 13.9ms | Allocations: 2927)
+
+
+RoomChannel transmitting {"id"=>8, "content"=>"ok thanks this is ", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:16:05.464Z", "updated_at"=>"2023-09-20T06:16:05.464Z"} (via streamed from room_channel_1)
+RoomChannel transmitting {"id"=>8, "content"=>"ok thanks this is ", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:16:05.464Z", "updated_at"=>"2023-09-20T06:16:05.464Z"} (via streamed from room_channel_1)
+Started POST "/rooms/1/messages" for ::1 at 2023-09-20 15:16:07 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"hello", "sender_name"=>"Ai", "room_id"=>"1", "message"=>{"content"=>"hello", "sender_name"=>"Ai"}}
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (4.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "hello"], ["sender_name", "Ai"], ["room_id", 1], ["created_at", "2023-09-20 06:16:07.734295"], ["updated_at", "2023-09-20 06:16:07.734295"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+[ActionCable] Broadcasting to room_channel_1: #<Message id: 9, content: "hello", sender_name: "Ai", room_id: 1, created_at: "2023-09-20 06:16:07.734295000 +0000", updated_at: "2023-09-20 06:16:07.734295000 +0000">
+Completed 201 Created in 38ms (Views: 1.7ms | ActiveRecord: 11.3ms | Allocations: 2930)
+
+
+RoomChannel transmitting {"id"=>9, "content"=>"hello", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:16:07.734Z", "updated_at"=>"2023-09-20T06:16:07.734Z"} (via streamed from room_channel_1)
+RoomChannel transmitting {"id"=>9, "content"=>"hello", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:16:07.734Z", "updated_at"=>"2023-09-20T06:16:07.734Z"} (via streamed from room_channel_1)
+Started POST "/rooms/1/messages" for ::1 at 2023-09-20 15:17:02 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"i think this system is not good cause there is no way to recognise who send the massage is the truely equals the name ", "sender_name"=>"Ai", "room_id"=>"1", "message"=>{"content"=>"i think this system is not good cause there is no way to recognise who send the massage is the truely equals the name ", "sender_name"=>"Ai"}}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (4.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "i think this system is not good cause there is no way to recognise who send the massage is the truely equals the name "], ["sender_name", "Ai"], ["room_id", 1], ["created_at", "2023-09-20 06:17:02.486079"], ["updated_at", "2023-09-20 06:17:02.486079"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+[ActionCable] Broadcasting to room_channel_1: #<Message id: 10, content: "i think this system is not good cause there is no ...", sender_name: "Ai", room_id: 1, created_at: "2023-09-20 06:17:02.486079000 +0000", updated_at: "2023-09-20 06:17:02.486079000 +0000">
+Completed 201 Created in 39ms (Views: 1.5ms | ActiveRecord: 11.3ms | Allocations: 2935)
+
+
+RoomChannel transmitting {"id"=>10, "content"=>"i think this system is not good cause there is no way to recognise who send the massage is the truely equals the name ", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:17:02.486Z", "updated_at"=>"2023-09-20T06:17:02.486Z"} (via streamed from room_channel_1)
+RoomChannel transmitting {"id"=>10, "content"=>"i think this system is not good cause there is no way to recognise who send the massage is the truely equals the name ", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:17:02.486Z", "updated_at"=>"2023-09-20T06:17:02.486Z"} (via streamed from room_channel_1)
+Started POST "/rooms/1/messages" for ::1 at 2023-09-20 15:18:16 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"and how will it be displaied the crealy long message like this massage. if this format is not good i mean if the format is bad to see , we should correct the problem hah a ;)", "sender_name"=>"Ai", "room_id"=>"1", "message"=>{"content"=>"and how will it be displaied the crealy long message like this massage. if this format is not good i mean if the format is bad to see , we should correct the problem hah a ;)", "sender_name"=>"Ai"}}
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (4.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "and how will it be displaied the crealy long message like this massage. if this format is not good i mean if the format is bad to see , we should correct the problem hah a ;)"], ["sender_name", "Ai"], ["room_id", 1], ["created_at", "2023-09-20 06:18:16.765481"], ["updated_at", "2023-09-20 06:18:16.765481"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+[ActionCable] Broadcasting to room_channel_1: #<Message id: 11, content: "and how will it be displaied the crealy long messa...", sender_name: "Ai", room_id: 1, created_at: "2023-09-20 06:18:16.765481000 +0000", updated_at: "2023-09-20 06:18:16.765481000 +0000">
+Completed 201 Created in 40ms (Views: 1.3ms | ActiveRecord: 11.5ms | Allocations: 2932)
+
+
+RoomChannel transmitting {"id"=>11, "content"=>"and how will it be displaied the crealy long message like this massage. if this format is not good i mean if the format is bad to see , we should correct the problem hah a ;)", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:18:16.765Z", "updated_at"=>"2023-... (via streamed from room_channel_1)
+RoomChannel transmitting {"id"=>11, "content"=>"and how will it be displaied the crealy long message like this massage. if this format is not good i mean if the format is bad to see , we should correct the problem hah a ;)", "sender_name"=>"Ai", "room_id"=>1, "created_at"=>"2023-09-20T06:18:16.765Z", "updated_at"=>"2023-... (via streamed from room_channel_1)
+Started GET "/rooms" for ::1 at 2023-09-20 15:20:03 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.7ms | Allocations: 1280)
+
+
+Started GET "/rooms" for ::1 at 2023-09-20 15:20:19 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 1160)
+
+
+Started GET "/cable" for ::1 at 2023-09-20 15:20:35 +0900
+Started GET "/rooms/3/messages" for ::1 at 2023-09-20 15:20:35 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 15:20:35 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"3"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 3], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1270)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_3
+Started POST "/rooms/3/messages" for ::1 at 2023-09-20 15:20:46 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"Hello", "sender_name"=>"John Smith", "room_id"=>"3", "message"=>{"content"=>"Hello", "sender_name"=>"John Smith"}}
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (4.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Hello"], ["sender_name", "John Smith"], ["room_id", 3], ["created_at", "2023-09-20 06:20:46.972905"], ["updated_at", "2023-09-20 06:20:46.972905"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+[ActionCable] Broadcasting to room_channel_3: #<Message id: 12, content: "Hello", sender_name: "John Smith", room_id: 3, created_at: "2023-09-20 06:20:46.972905000 +0000", updated_at: "2023-09-20 06:20:46.972905000 +0000">
+Completed 201 Created in 36ms (Views: 1.6ms | ActiveRecord: 10.7ms | Allocations: 2919)
+
+
+RoomChannel transmitting {"id"=>12, "content"=>"Hello", "sender_name"=>"John Smith", "room_id"=>3, "created_at"=>"2023-09-20T06:20:46.972Z", "updated_at"=>"2023-09-20T06:20:46.972Z"} (via streamed from room_channel_3)
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 15:20:53 +0900
+RoomChannel stopped streaming from room_channel_3
+Started GET "/rooms" for ::1 at 2023-09-20 15:20:59 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.5ms | Allocations: 1160)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:02:47 +0900
+RoomChannel stopped streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:02:47 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:02:47 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:02:47 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:02:47 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:02:47 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:02:47 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:02:47 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 6.7ms | ActiveRecord: 1.1ms | Allocations: 3143)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started GET "/rooms" for ::1 at 2023-09-20 16:02:47 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:02:47 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:02:47 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 1198)
+
+
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:02:47 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2865)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:12:56 +0900
+RoomChannel stopped streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:12:56 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:12:56 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:12:56 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:12:56 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:12:56 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:12:56 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:12:56 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 1.0ms | Allocations: 3023)
+
+
+Started GET "/cable" for ::1 at 2023-09-20 16:12:56 +0900
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:12:56 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:12:56 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/rooms" for ::1 at 2023-09-20 16:12:56 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 2967)
+
+
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1262)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:21:04 +0900
+RoomChannel stopped streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:21:04 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:21:04 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:21:04 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:21:05 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.7ms | Allocations: 3261)
+
+
+Started GET "/rooms" for ::1 at 2023-09-20 16:21:05 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:21:05 +0900
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 1199)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:21:05 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:21:05 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2857)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:08 +0900
+RoomChannel stopped streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:08 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:34:08 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:34:08 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:08 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 1.0ms | Allocations: 3023)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started GET "/rooms" for ::1 at 2023-09-20 16:34:08 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:34:08 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:34:08 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 1189)
+
+
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:08 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 2865)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:13 +0900
+RoomChannel stopped streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:14 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:34:14 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:34:14 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 2962)
+
+
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:14 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/rooms" for ::1 at 2023-09-20 16:34:14 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:34:14 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 1164)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:34:14 +0900
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:34:14 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 2865)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Started GET "/rooms" for ::1 at 2023-09-20 16:34:55 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 1160)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:35:29 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 2857)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:35:29 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 2857)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:35:38 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 2857)
+
+
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:35:38 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 0.5ms | Allocations: 2857)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:36:10 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:36:10 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:36:10 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:36:10 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 2944)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:39:56 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:40:11 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:40:11 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:40:11 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 28ms (Views: 20.1ms | ActiveRecord: 1.0ms | Allocations: 2960)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:40:13 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:41:42 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:41:42 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:41:42 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 2876)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:41:43 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/cable" for ::1 at 2023-09-20 16:41:43 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:41:43 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:41:43 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.9ms | Allocations: 2865)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:41:52 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/rooms" for ::1 at 2023-09-20 16:44:35 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1160)
+
+
+Started GET "/rooms" for ::1 at 2023-09-20 16:44:35 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1160)
+
+
+Started GET "/rooms" for ::1 at 2023-09-20 16:44:41 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 1161)
+
+
+Started GET "/rooms" for ::1 at 2023-09-20 16:44:41 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1160)
+
+
+Started GET "/rooms" for ::1 at 2023-09-20 16:44:54 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 1160)
+
+
+Started GET "/rooms/2/messages" for ::1 at 2023-09-20 16:44:56 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:44:56 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"2"}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 2], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 14ms (Views: 5.9ms | ActiveRecord: 0.8ms | Allocations: 1271)
+
+
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:44:56 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_2
+Started POST "/rooms/2/messages" for ::1 at 2023-09-20 16:45:09 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"content"=>"わたしはランダム１ですよ", "sender_name"=>"ランダム１", "room_id"=>"2", "message"=>{"content"=>"わたしはランダム１ですよ", "sender_name"=>"ランダム１"}}
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mMessage Create (5.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "sender_name", "room_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "わたしはランダム１ですよ"], ["sender_name", "ランダム１"], ["room_id", 2], ["created_at", "2023-09-20 07:45:09.463850"], ["updated_at", "2023-09-20 07:45:09.463850"]]
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:15:in `create'
+[ActionCable] Broadcasting to room_channel_2: #<Message id: 13, content: "わたしはランダム１ですよ", sender_name: "ランダム１", room_id: 2, created_at: "2023-09-20 07:45:09.463850000 +0000", updated_at: "2023-09-20 07:45:09.463850000 +0000">
+Completed 201 Created in 45ms (Views: 1.3ms | ActiveRecord: 12.6ms | Allocations: 2926)
+
+
+RoomChannel transmitting {"id"=>13, "content"=>"わたしはランダム１ですよ", "sender_name"=>"ランダム１", "room_id"=>2, "created_at"=>"2023-09-20T07:45:09.463Z", "updated_at"=>"2023-09-20T07:45:09.463Z"} (via streamed from room_channel_2)
+Started GET "/rooms" for ::1 at 2023-09-20 16:48:08 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1160)
+
+
+Started GET "/cable" for ::1 at 2023-09-20 16:48:11 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:48:11 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:11 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 2857)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:13 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/rooms/mainUrl/messages" for ::1 at 2023-09-20 16:48:13 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:48:13 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"mainUrl"}
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 572)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=mainUrl):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:13 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_mainUrl
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:24 +0900
+RoomChannel stopped streaming from room_channel_mainUrl
+Started GET "/rooms/mainUrl/messages" for ::1 at 2023-09-20 16:48:24 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:48:24 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"mainUrl"}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 404 Not Found in 8ms (ActiveRecord: 0.4ms | Allocations: 542)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=mainUrl):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:25 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_mainUrl
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:25 +0900
+RoomChannel stopped streaming from room_channel_mainUrl
+Started GET "/rooms/mainUrl/messages" for ::1 at 2023-09-20 16:48:25 +0900
+Started GET "/cable" for ::1 at 2023-09-20 16:48:25 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"mainUrl"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 404 Not Found in 8ms (ActiveRecord: 0.3ms | Allocations: 541)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=mainUrl):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:25 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_mainUrl
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:57 +0900
+RoomChannel stopped streaming from room_channel_mainUrl
+Started GET "/cable" for ::1 at 2023-09-20 16:48:57 +0900
+Started GET "/rooms/mainUrl/messages" for ::1 at 2023-09-20 16:48:57 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:57 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"mainUrl"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 552)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=mainUrl):
+  
+app/controllers/messages_controller.rb:5:in `index'
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_mainUrl
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:48:58 +0900
+RoomChannel stopped streaming from room_channel_mainUrl
+Started GET "/rooms" for ::1 at 2023-09-20 16:48:58 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1160)
+
+
+Started GET "/cable" for ::1 at 2023-09-20 16:49:00 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:49:00 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:49:00 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 0.5ms | Allocations: 2960)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_1
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:49:01 +0900
+RoomChannel stopped streaming from room_channel_1
+Started GET "/rooms" for ::1 at 2023-09-20 16:49:01 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 1160)
+
+
+Started GET "/cable" for ::1 at 2023-09-20 16:49:10 +0900
+Started GET "/rooms/4/messages" for ::1 at 2023-09-20 16:49:10 +0900
+Started GET "/cable" [WebSocket] for ::1 at 2023-09-20 16:49:10 +0900
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"4"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 4], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 0.7ms | Allocations: 1357)
+
+
+Started GET "/rooms/2/messages" for ::1 at 2023-09-20 16:49:10 +0900
+Started GET "/rooms/1/messages" for ::1 at 2023-09-20 16:49:11 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"2"}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 2], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 0.8ms | Allocations: 1426)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_4
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"1"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 1], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 23ms (Views: 15.5ms | ActiveRecord: 0.8ms | Allocations: 2864)
+
+
+Started GET "/rooms/4/messages" for ::1 at 2023-09-20 16:49:11 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"room_id"=>"4"}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ? LIMIT ?[0m  [["room_id", 4], ["LIMIT", 20]]
+  ↳ app/controllers/messages_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 5.6ms | ActiveRecord: 0.9ms | Allocations: 1264)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2023-09-20 16:49:12 +0900
+RoomChannel stopped streaming from room_channel_4
+Started GET "/rooms" for ::1 at 2023-09-20 16:49:12 +0900
+Processing by RoomsController#index as HTML
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 1160)
+
+
